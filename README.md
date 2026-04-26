@@ -46,7 +46,7 @@ npm start
 Update your email credentials in `.env.local`
 
 ## 🌐 Live Demo
-sumit-tirmare.netlify.app
+[Live Demo](https://sumit-tirmare.netlify.app)
 
 ## 👤 Author
 Shreya Raval

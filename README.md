@@ -46,7 +46,7 @@ npm start
 Update your email credentials in `.env.local`
 
 ## 🌐 Live Demo
-[Sumit Tirmare](sumit-tirmare.vercel.app)
+[Live Demo](sumit-tirmare.vercel.app)
 
 ## 👤 Author
 Shreya Raval

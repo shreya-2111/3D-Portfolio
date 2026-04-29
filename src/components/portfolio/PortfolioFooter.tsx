@@ -10,7 +10,7 @@ export default function PortfolioFooter() {
           <p className="mt-2 text-sm text-[var(--color-muted)]">
             Motion Graphic Designer &amp; 2D Animator
           </p> <br/>
-          <p className="text-sm font-medium tracking-[0.35em] text-white">Design and Developed by SHREYA RAVAL.</p>
+          <p className="text-sm font-medium tracking-[0.35em] text-white">Design and Developed by SHREYA RAVAL </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-3">

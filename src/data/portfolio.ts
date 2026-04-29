@@ -67,14 +67,16 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "AI Generated Video",
-      category: "Animated",
+      title: "Hospital Brand Reel",
+      category: "Reel",
       description:
-        "A cinematic animated retelling of the Hanumanji story, crafted with AI-assisted visuals and fluid motion choreography.",
-      previewLabel: "AI visuals",
-      deliverable: "Animated film",
-      year: "2026",
-      accent: "from-[#7ca7ff]/25 via-transparent to-[#59e7ff]/20",
+        "A brand reel for a hospital, blending trust-building visuals with clean motion design and a warm cinematic tone.",
+      previewLabel: "Brand storytelling",
+      deliverable: "Brand reel",
+      year: "2025",
+      accent: "from-[#59e7ff]/24 via-transparent to-[#f85f9b]/18",
+      image: "/assets/hospital.jpg",
+      reelVideo: "/assets/hospital.mp4",
     },
     {
       title: "Furniture Showcase Video",
@@ -85,16 +87,8 @@ export const portfolioData = {
       deliverable: "Product film",
       year: "2026",
       accent: "from-[#74f0d6]/22 via-transparent to-[#5f8cff]/16",
-    },
-    {
-      title: "Hospital Brand Reel",
-      category: "Reel",
-      description:
-        "A brand reel for a hospital, blending trust-building visuals with clean motion design and a warm cinematic tone.",
-      previewLabel: "Brand storytelling",
-      deliverable: "Brand reel",
-      year: "2025",
-      accent: "from-[#59e7ff]/24 via-transparent to-[#f85f9b]/18",
+      image: "/assets/furniture.jpg",
+      reelVideo: "/assets/furniture.mp4",
     },
     {
       title: "Headphone Product Animation",
@@ -105,6 +99,8 @@ export const portfolioData = {
       deliverable: "Product animation",
       year: "2025",
       accent: "from-[#f5c27c]/22 via-transparent to-[#7ca7ff]/18",
+      image: "/assets/headphone.jpg",
+      reelVideo: "/assets/headphone.mp4",
     },
     {
       title: "Cinematic AI Video",
@@ -115,6 +111,20 @@ export const portfolioData = {
       deliverable: "Cinematic film",
       year: "2024",
       accent: "from-[#f85f9b]/24 via-transparent to-[#7ca7ff]/18",
+      image: "/assets/cinematic.jpg",
+      reelVideo: "/assets/cinemetic.mp4",
+    },
+    {
+      title: "AI Generated Video (Hanumanji)",
+      category: "Animated",
+      description:
+        "A cinematic animated retelling of the Hanumanji story, crafted with AI-assisted visuals and fluid motion choreography.",
+      previewLabel: "AI visuals",
+      deliverable: "Animated film",
+      year: "2026",
+      accent: "from-[#7ca7ff]/25 via-transparent to-[#59e7ff]/20",
+      image: "/assets/hanumanji.jpg",
+      reelVideo: "/assets/hanumaji.mp4",
     },
   ],
   showreel: {

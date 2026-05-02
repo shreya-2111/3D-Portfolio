@@ -79,54 +79,6 @@ function LiquidForm() {
   );
 }
 
-// ─── Dynamic Sweeping Ribbons (Standard Tube Geometry) ───────────────────────
-function Ribbon({ curve, color, speed, thickness }: { curve: THREE.CatmullRomCurve3, color: string, speed: number, thickness: number }) {
-  const meshRef = useRef<THREE.Mesh>(null);
-  const tubeGeo = useMemo(() => new THREE.TubeGeometry(curve, 100, thickness, 6, false), [curve]);
-
-  useFrame(({ clock }) => {
-    if (!meshRef.current) return;
-    const t = clock.getElapsedTime();
-    meshRef.current.rotation.x = Math.sin(t * speed) * 0.1;
-    meshRef.current.rotation.z = Math.cos(t * speed) * 0.1;
-  });
-
-  return (
-    <mesh ref={meshRef} geometry={tubeGeo}>
-      <meshStandardMaterial color={color} emissive={color} emissiveIntensity={0.4} roughness={0.3} metalness={0.8} />
-    </mesh>
-  );
-}
-
-function DynamicRibbons() {
-  const curves = useMemo(() => {
-    const curve1 = new THREE.CatmullRomCurve3([
-      new THREE.Vector3(-12, -3, -6),
-      new THREE.Vector3(-5, 5, -2),
-      new THREE.Vector3(0, 1, 4),
-      new THREE.Vector3(5, -4, 0),
-      new THREE.Vector3(12, 3, -6),
-    ], false);
-    
-    const curve2 = new THREE.CatmullRomCurve3([
-      new THREE.Vector3(-12, 4, 1),
-      new THREE.Vector3(-4, -3, 5),
-      new THREE.Vector3(2, 5, -2),
-      new THREE.Vector3(7, 0, 4),
-      new THREE.Vector3(12, -4, -3),
-    ], false);
-    
-    return [curve1, curve2];
-  }, []);
-
-  return (
-    <group>
-      <Ribbon curve={curves[0]} color="#59e7ff" speed={0.2} thickness={0.03} />
-      <Ribbon curve={curves[1]} color="#f85f9b" speed={0.3} thickness={0.04} />
-    </group>
-  );
-}
-
 // ─── CPU Motion Trails (Safe Particles) ──────────────────────────────────────
 function MotionTrails() {
   const count = 40; 
@@ -340,7 +292,6 @@ export default function HeroScene() {
       {/* Motion Graphics Composition */}
       <group position={[0, 0, 0]}>
         <LiquidForm />
-        <DynamicRibbons />
         <MotionTrails />
         <KineticTypography />
         <FloatingFrames />

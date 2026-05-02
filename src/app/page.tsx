@@ -1,7 +1,7 @@
 import PortfolioPage from "@/components/portfolio/PortfolioPage";
 import { portfolioData } from "@/data/portfolio";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sumit-tirmare.vercel.app";
+const siteUrl = "https://sumit-tirmare.vercel.app";
 
 export default function Home() {
   const jsonLd = {

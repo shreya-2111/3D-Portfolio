@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://sumit-tirmare.vercel.app"),
+  metadataBase: new URL("https://sumit-tirmare.vercel.app"),
   title: {
     default: "Sumit Tirmare | Motion Graphic Designer & 2D Animator",
     template: "%s | Sumit Tirmare",

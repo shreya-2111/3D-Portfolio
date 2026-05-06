@@ -2,6 +2,9 @@
 
 Modern portfolio website with smooth animations and 3D effects.
 
+## 🌐 Live Demo
+🔗 [Visit Website](https://sumit-tirmare.vercel.app)
+
 ## 🚀 Tech Stack
 
 * Next.js
@@ -44,9 +47,6 @@ npm start
 
 ## 📧 Contact
 Update your email credentials in `.env.local`
-
-## 🌐 Live Demo
-🔗 [Visit Website](https://sumit-tirmare.vercel.app)
 
 ## 👤 Author
 Shreya Raval
